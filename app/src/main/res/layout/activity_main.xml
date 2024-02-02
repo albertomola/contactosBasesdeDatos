@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/intprovince"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -27,11 +28,24 @@
             android:hint="Email"
             android:inputType="text" />
 
+        <EditText
+            android:id="@+id/provinceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Provincia"
+            android:inputType="text" />
+
         <Button
             android:id="@+id/saveButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Guardar Datos" />
+
+        <Spinner
+            android:id="@+id/spinner_provincia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/consultaButton"
@@ -48,6 +62,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </ScrollView>
+
+        <Button
+            android:id="@+id/consulProv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consulta por Provincia" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
